@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hello"
+version = "0.1.0"
+description = "prints Hello message"
+authors = ["Kirill Zhelvakov <blzneci.89@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = "hello.scripts.say_hello:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
